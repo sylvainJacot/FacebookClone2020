@@ -1,13 +1,13 @@
 import React from "react";
-import {imagesLearn} from "../media/images";
+import {imagesLearn} from "../Media/images";
 
 const cards = [
     {
         id: 0,
-        title: "SVG import as JSX Function",
+        title: "React Router",
         description: "Description",
         bgimage: imagesLearn.test,
-        pathname: "/",
+        pathname: "/Learn/Routes-Learn",
     },
     {
         id: 2,
