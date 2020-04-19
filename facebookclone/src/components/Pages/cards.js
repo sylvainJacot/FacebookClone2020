@@ -1,12 +1,16 @@
 import React from "react";
-import styled from "styled-components";
 import cards from "../Mock/cards-mock"
+import CardItem from "../Cards/carditem";
 
 const CardsList = () => {
     return <>
         {
             cards.map((card) => (
-                <div><h1>{card.title}</h1></div>
+                <CardItem
+                    bgimage={card.bgimage}
+                    title={card.title}
+                    description={card.description}
+                />
             ))
         }
     </>
