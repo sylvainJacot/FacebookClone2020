@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from "styled-components";
 import "./reset.css";
-import Header from "./components/Header/Header";
+import FaceBookHome from "./components/Pages/facebookhome";
+import CardsList from "./components/Pages/cards";
 
 export const Body = styled.body`
 width: 100vw;
@@ -12,7 +13,8 @@ background-color: #F0F2F5;
 const App = () => {
   return (
       <Body>
-        <Header />
+        <FaceBookHome />
+        <CardsList/>
       </Body>
 
   );
