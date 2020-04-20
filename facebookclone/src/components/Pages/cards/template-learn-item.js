@@ -26,6 +26,7 @@ const TemplateLearnItem = (props) => {
                <CodeSnippet
                    explanation={item.explanation}
                    code={item.codecontent}
+                   img={item.img}
                />
            ))
 

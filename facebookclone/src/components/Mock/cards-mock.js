@@ -1,7 +1,9 @@
 import React from "react";
 import {imagesLearn} from "../Media/images";
+import MapRoutesCode01Screen from "../../media/images/Capture d’écran 2020-04-20 à 16.49.02.png"
 
-const MapRoutesCode01 = (
+
+const MapRoutesCode02 = (
     <pre>
         <code className={"language-javascript"}>
             {`const Routes = [
@@ -14,7 +16,7 @@ const MapRoutesCode01 = (
         </code>
         </pre>
 );
-const MapRoutesCode02 = (
+const MapRoutesCode03 = (
     <pre>
         <code className={"language-javascript"}>
             {`const TemplateLearn = ({match}) => {
@@ -34,7 +36,7 @@ export default TemplateLearn;`}
         </code>
         </pre>
 );
-const MapRoutesCode03 = (
+const MapRoutesCode04 = (
     <pre>
         <code className={"language-javascript"}>
             {`const TemplateLearnItem = (props) => {
@@ -66,7 +68,7 @@ export default TemplateLearnItem;`}
         </code>
         </pre>
 );
-const MapRoutesCode04 = (
+const MapRoutesCode05 = (
     <pre>
         <code className={"language-javascript"}>
             {`const CodeSnippet = (props) => {
@@ -91,28 +93,31 @@ export const cards = [
         slug: "MapRoutes-Learn",
         content: [
             {
-                explanation: "Preview of the date to map",
-                codecontent: "none",
+                explanation: "CardItem will be the Link that will redirect to our TemplateLearn",
+                img: MapRoutesCode01Screen,
             },
             {
                 explanation: "Prepare your :slug in your routes",
-                codecontent: MapRoutesCode01,
-            },
-            {
-                explanation: "Create an intermediate component that will take care of the Route with the slug proprety then return the component that will we mapped (TemplateLearnItem)",
                 codecontent: MapRoutesCode02,
             },
             {
-                explanation: "TemplateLearnItem includes CodeSnippet that will be mapped, contentItems needs to be props, it is the equivalent of 'card.content'",
+                explanation: "Create an intermediate component that will take care of the Route with the slug proprety then return the component that will we mapped (TemplateLearnItem)",
                 codecontent: MapRoutesCode03,
             },
             {
-                explanation: "CodeSnippet is a very simple component",
+                explanation: "TemplateLearnItem includes CodeSnippet that will be mapped, contentItems needs to be props, it is the equivalent of 'card.content'",
                 codecontent: MapRoutesCode04,
+            },
+            {
+                explanation: "CodeSnippet is a very simple component",
+                codecontent: MapRoutesCode05,
             },
 
         ]
     },
 
 ]
+
+
+
 
