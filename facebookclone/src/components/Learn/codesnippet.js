@@ -6,7 +6,6 @@ const CodeSnippet = (props) => {
     return <>
         <p>{props.explanation}</p>
         {props.code}
-
     </>
 
 };

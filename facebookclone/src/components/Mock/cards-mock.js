@@ -1,8 +1,5 @@
 import React from "react";
 import {imagesLearn} from "../Media/images";
-import FaceBookHome from "../Pages/facebookhome";
-import CardsList from "../Pages/cards";
-import TemplateLearn from "../Pages/cards/template-learn";
 
 const MapRoutesCode01 = (
     <pre>
