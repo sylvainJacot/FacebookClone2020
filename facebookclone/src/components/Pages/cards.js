@@ -17,7 +17,7 @@ const CardsList = () => {
                     bgimage={card.bgimage}
                     title={card.title}
                     description={card.description}
-                    pathname={card.pathname}
+                    slug={card.slug}
                 />
             ))
         }

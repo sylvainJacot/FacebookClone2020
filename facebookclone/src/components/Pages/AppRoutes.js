@@ -1,7 +1,7 @@
 import React from "react";
 import {Route, Switch} from 'react-router-dom';
 import ErrorPage from "./page404";
-import RoutesLearn from "./cards/reactrouter-learn";
+import TemplateLearn from "./cards/template-learn";
 import FaceBookHome from "./facebookhome";
 import CardsList from "./cards";
 
@@ -17,9 +17,9 @@ const Routes = [
         component: CardsList
     },
     {
-        path:"/Learn/Routes-Learn",
-        exact: true,
-        component: RoutesLearn,
+        path:`/Learn/:slug`,
+        exact: false,
+        component: TemplateLearn,
     },
 
 ]

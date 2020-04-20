@@ -4,12 +4,9 @@ import styled from "styled-components";
 
 const CodeSnippet = (props) => {
     return <>
-        <pre>
-         <code>
-         <p>{props.code}</p>
-        </code>
+        <p>{props.explanation}</p>
+        {props.code}
 
-      </pre>
     </>
 
 };

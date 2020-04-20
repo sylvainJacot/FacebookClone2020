@@ -55,7 +55,7 @@ const CardItem = (props) => {
 
 
             <CardItemWrapper bgimage={props.bgimage}>
-                <StyledLink to={props.pathname}>
+                <StyledLink to={props.slug}>
                     <TextContent>
                         <h5>{props.title}</h5>
                         <p>{props.description}</p>
