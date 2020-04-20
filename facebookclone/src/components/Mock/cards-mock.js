@@ -1,7 +1,7 @@
 import React from "react";
 import {imagesLearn} from "../Media/images";
 
-const cards = [
+export const cards = [
     {
         id: 0,
         title: "React Router",
@@ -39,4 +39,3 @@ const cards = [
     },
 ]
 
-export default cards;

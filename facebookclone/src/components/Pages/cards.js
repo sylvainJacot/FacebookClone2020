@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import cards from "../Mock/cards-mock"
-import CardItem from "../Cards/carditem";
+import {cards} from "../Mock/cards-mock"
+import CardItem from "../Learn/carditem";
 
 export const CardsListContainer = styled.div`
 display: flex;
