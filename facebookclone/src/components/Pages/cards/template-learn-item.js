@@ -8,10 +8,10 @@ height: 100%;
 background-color: silver;
 display: flex;
 flex-direction: column;
-align-items: center;
+align-items: flex-start;
 `;
 
-const TemplateLearnItem = (props,contentitems) => {
+const TemplateLearnItem = (props) => {
 
     const contentItems = props.contentitems;
 

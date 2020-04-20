@@ -7,7 +7,7 @@ import CardsList from "./cards";
 
 const Routes = [
     {
-        path:"/",
+        path:"/FacebookClone",
         exact: true,
         component: FaceBookHome
     },

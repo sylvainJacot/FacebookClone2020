@@ -1,111 +1,121 @@
 import React from "react";
 import {imagesLearn} from "../Media/images";
+import FaceBookHome from "../Pages/facebookhome";
+import CardsList from "../Pages/cards";
+import TemplateLearn from "../Pages/cards/template-learn";
 
-const ReactRouterCode01 = (
+const MapRoutesCode01 = (
     <pre>
         <code className={"language-javascript"}>
             {`const Routes = [
-    {
-        path:"/",
-        exact: true,
-        component: FaceBookHome
-    },
-    {
-        path:"/Learn",
-        exact: true,
-        component: CardsList
-    },
-    {
-        path:"/Learn/Routes-Learn",
-        exact: true,
-        component: RoutesLearn,
+        path:\`/Learn/:slug\`,
+        exact: false,
+        component: TemplateLearn,
     },
 
-]
+]`}
+        </code>
+        </pre>
+);
+const MapRoutesCode02 = (
+    <pre>
+        <code className={"language-javascript"}>
+            {`const TemplateLearn = ({match}) => {
 
-const AppRoutes = () => {
+    const card = cards.find(({ slug }) => slug === match.params.slug);
+
+    return (
+            <TemplateLearnItem
+            title={card.title}
+            description={card.description}
+            contentitems={card.content}
+            />
+    )
+};
+
+export default TemplateLearn;`}
+        </code>
+        </pre>
+);
+const MapRoutesCode03 = (
+    <pre>
+        <code className={"language-javascript"}>
+            {`const TemplateLearnItem = (props) => {
+
+    const contentItems = props.contentitems;
+
     return <>
-        <Switch>
-            {
-                Routes.map((route) =>
+       <BodyLearn>
 
-                    <Route
-                        path={route.path}
-                        exact={route.exact}
-                        component={route.component}
-                    />
-                )
-            }
-            <Route path="*" component={ErrorPage}/>
+                <h2>{props.title}</h2>
 
-        </Switch>
+                <p>{props.description}</p>
 
+           {contentItems.map((item) => (
+               <CodeSnippet
+                   explanation={item.explanation}
+                   code={item.codecontent}
+               />
+           ))
+
+           }
+
+       </BodyLearn>
     </>
 
 };
 
-
-export default AppRoutes;`}
+export default TemplateLearnItem;`}
         </code>
         </pre>
+);
+const MapRoutesCode04 = (
+    <pre>
+        <code className={"language-javascript"}>
+            {`const CodeSnippet = (props) => {
+    return <>
+        <p>{props.explanation}</p>
+        {props.code}
 
+    </>
+
+};
+export default CodeSnippet;`}
+        </code>
+        </pre>
 );
 
 export const cards = [
     {
         id: 0,
-        title: "React Router",
-        description: "Description du code",
+        title: "Map with react rooter",
+        description: "Map components and attribute route for each of them",
         bgimage: imagesLearn.test,
-        slug: "Routes-Learn",
+        slug: "MapRoutes-Learn",
         content: [
             {
-                explanation: "explanation one",
-                codecontent: ReactRouterCode01,
+                explanation: "Preview of the date to map",
+                codecontent: "none",
             },
             {
-                explanation: "explanation TWO",
-                codecontent: ReactRouterCode02,
+                explanation: "Prepare your :slug in your routes",
+                codecontent: MapRoutesCode01,
             },
             {
-                explanation: "explanation TWO",
-                codecontent: ReactRouterCode02,
-            },
-        ]
-    },
-    {
-        id: 1,
-        title: "React Router loool",
-        description: "Description du code",
-        bgimage: imagesLearn.test,
-        slug: "Deuxieme-Learn",
-        content: [
-            {
-                explanation: "explanation one",
-                codecontent: ReactRouterCode01,
+                explanation: "Create an intermediate component that will take care of the Route with the slug proprety then return the component that will we mapped (TemplateLearnItem)",
+                codecontent: MapRoutesCode02,
             },
             {
-                explanation: "explanation TWO",
-                codecontent: ReactRouterCode02,
-            },
-        ]
-    },
-    {
-        id: 2,
-        title: "React Router",
-        description: "Description",
-        bgimage: imagesLearn.test,
-        slug: "Troisieme-Learn",
-        content: [
-            {
-                explanation: "explanation one",
-                codecontent: ReactRouterCode01,
+                explanation: "TemplateLearnItem includes CodeSnippet that will be mapped, contentItems needs to be props, it is the equivalent of 'card.content'",
+                codecontent: MapRoutesCode03,
             },
             {
-                explanation: "explanation TWO",
-                codecontent: ReactRouterCode02,
+                explanation: "CodeSnippet is a very simple component",
+                codecontent: MapRoutesCode04,
             },
+
         ]
     },
 
 ]
+

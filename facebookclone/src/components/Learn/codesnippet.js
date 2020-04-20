@@ -10,5 +10,4 @@ const CodeSnippet = (props) => {
     </>
 
 };
-
 export default CodeSnippet;

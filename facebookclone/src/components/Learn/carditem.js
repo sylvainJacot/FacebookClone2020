@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import {colorsRoles} from "../Styles/colors";
-import {Link} from "react-router-dom";
+import {Link, useRouteMatch} from "react-router-dom";
 
 
 export const StyledLink = styled(Link)`
@@ -51,11 +51,14 @@ align-items: center;
 
 
 const CardItem = (props) => {
+
+    let { url } = useRouteMatch();
+
     return <>
 
 
             <CardItemWrapper bgimage={props.bgimage}>
-                <StyledLink to={props.slug}>
+                <StyledLink to={`${url}/${props.slug}`}>
                     <TextContent>
                         <h5>{props.title}</h5>
                         <p>{props.description}</p>
