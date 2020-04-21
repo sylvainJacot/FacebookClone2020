@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Header from "../Header/Header";
+import HeaderFaceBook from "../Header/HeaderFaceBook";
 
 export const Body = styled.body`
 width: 100vw;
@@ -11,7 +11,7 @@ background-color: #F0F2F5;
 const FaceBookHome = () => {
     return <>
        <Body>
-        <Header />
+        <HeaderFaceBook />
        </Body>
     </>
 

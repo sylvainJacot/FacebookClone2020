@@ -1,4 +1,4 @@
-import FaceBookHome from "../Pages/facebookhome";
+import FaceBookHome from "../Pages/FaceBookHome";
 
 export const colors = {
     FaceBookBlue1 : "#1877f2",
