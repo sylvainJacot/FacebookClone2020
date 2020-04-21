@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import icons from "../media/icons";
-import WatchIcon from "../media/icons/WatchIcon";
-import MarketPlace from "../media/icons/MarketPlace";
-import MarketPlacePlain from "../media/icons/MarkPlacePlain";
+import icons from "../Media/icons";
+import WatchIcon from "../Media/icons/WatchIcon";
+import MarketPlace from "../Media/icons/MarketPlace";
+import MarketPlacePlain from "../Media/icons/MarkPlacePlain";
 
 export const HeaderBox = styled.header`
 width: 100%;

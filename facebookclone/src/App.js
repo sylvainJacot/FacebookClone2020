@@ -1,25 +1,22 @@
 import React from 'react';
-import styled from "styled-components";
 import "./reset.css";
+import {withRouter, Link} from "react-router-dom";
 import FaceBookHome from "./components/Pages/facebookhome";
 import CardsList from "./components/Pages/cards";
+import AppRoutes from "./components/Pages/AppRoutes";
 
-export const Body = styled.body`
-width: 100vw;
-height: 100vh;
-background-color: #F0F2F5;
-`;
 
 const App = () => {
   return (
-      <Body>
-        <FaceBookHome />
-        <CardsList/>
-      </Body>
+      <>
+        <Link to="/FacebookClone">Facebook</Link>
+        <Link to="/Learn">Cards List</Link>
+            <AppRoutes/>
+      </>
 
   );
 }
 
-export default App;
+export default withRouter(App);
 
 
