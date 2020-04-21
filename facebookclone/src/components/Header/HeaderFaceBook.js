@@ -21,7 +21,10 @@ const HeaderFaceBook = () => {
     return <>
         <HeaderBox>
             <Logo src={FaceBookLogo}/>
-             <Icons icon="MarketPlace" size="40" color={colorsRoles.primary}/>
+             <Icons icon="Home" size="40" color={colorsRoles.primary}/>
+            <Icons icon="Watch" size="40" color={colorsRoles.primary}/>
+            <Icons icon="MarketPlace" size="40" color={colorsRoles.primary}/>
+            <Icons icon="Groupes" size="40" color={colorsRoles.primary}/>
         </HeaderBox>
     </>
 
