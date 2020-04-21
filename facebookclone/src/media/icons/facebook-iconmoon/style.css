@@ -1,0 +1,28 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-Facebook {
+  width: 0.9755859375em;
+}
+
+.icon-Home {
+  width: 1.130859375em;
+}
+
+.icon-MarketPlace-Active {
+  width: 1.0869140625em;
+}

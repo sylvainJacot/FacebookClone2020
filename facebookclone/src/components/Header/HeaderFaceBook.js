@@ -1,9 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import icons from "../Media/icons";
-import WatchIcon from "../Media/icons/WatchIcon";
-import MarketPlace from "../Media/icons/MarketPlace";
-import MarketPlacePlain from "../Media/icons/MarkPlacePlain";
+import Icons from "../Media/Icons";
+import FaceBookLogo from "../../media/icons/Facebook.svg";
+import {colorsRoles} from "../Styles/colors";
 
 export const HeaderBox = styled.header`
 width: 100%;
@@ -14,15 +13,18 @@ background-color: white;
 box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.08);
 `;
 
-const Header = () => {
+export const Logo = styled.img`
+width: 64px;
+`;
+
+const HeaderFaceBook = () => {
     return <>
         <HeaderBox>
-            <img src={icons.facebook} />
-            <MarketPlace fill={"blue"}/>
-            <MarketPlacePlain fill={"blue"}/>
+            <Logo src={FaceBookLogo}/>
+             <Icons icon="MarketPlace" size="40" color={colorsRoles.primary}/>
         </HeaderBox>
     </>
 
 };
 
-export default Header;
+export default HeaderFaceBook;

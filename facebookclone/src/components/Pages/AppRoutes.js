@@ -2,7 +2,7 @@ import React from "react";
 import {Route, Switch} from 'react-router-dom';
 import ErrorPage from "./page404";
 import TemplateLearn from "./cards/template-learn";
-import FaceBookHome from "./facebookhome";
+import FaceBookHome from "./FaceBookHome";
 import CardsList from "./cards";
 
 const Routes = [
